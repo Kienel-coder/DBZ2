@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //                                                   HEAD                                                   // -->
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<html>
+<head>
+    <title>Divadlo bez zákulisí</title>
+    <link rel="icon" type="image/x-icon" href="Icons/favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!--Tři následující řádky zajišťují nenačítání Cache dat-->
+    <meta HTTP-EQUIV="Expires" CONTENT="0">
+    <meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+
+    <meta name="keywords" content="Divadlo bez zákulisí, Sokolovská čurda, Hrajeme o život">
+    <meta name="description" content="Divadlo bez zákulisí, divadlo pro Vás">
+    <meta name="author" content="Ladislav KÜHNL">
+
+    <!--Kompatabilita-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=11">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+    <meta http-equiv="X-UA-Compatible" content="IE=10">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <meta http-equiv="X-UA-Compatible" content="IE=5">
+
+    <!-- CSS - bootstrap je určen i pro ovládání Hamburger menu (je to framework)-->
+	<link rel="stylesheet" href="css/Icons.css">
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+	    <link rel="stylesheet" href="Bootstrap-5.0.2/css/bootstrap.min.css">
+	
+    <!-- Vlastní CSS-->
+    <link rel="stylesheet" href="css/Kienel.css">
+		
+    <!-- Přidání vlastního CSS pro hamburger menu -->
+    <link rel="stylesheet" href="css/mobile-menu.css">
+	
+    <!-- Script nutný pro AdobeAnimate-->
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>	
+	
+
+</head>
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //                                                 BODY                                                     // -->
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<body>
+
+<!-- Horní lišta -->
+<!-- ////////////////////////////////////-->
+<nav id="HorniListaBilyPodklad">
+    <div class="HorniLista">
+        <img class="LogoDivadlo" src="images/Divadlo.jpg" alt="Divadlo bez zákulisí" width="60">  
+        <span class="NapisDivadlo">Divadlo bez zákulisí</span>
+
+		<div class="darkTheme">
+		        <ul>
+			    <li class="active">
+                    <a id="iconaDomu" href="Domu.html">
+					      <img src="icons/Home.png" title="Domů" alt="Home Icon" class="iconHome" />
+                          <span>Domů</span>
+                    </a>
+                </li>
+					
+                <li class="neactive">
+                    <a id="iconaKronika" href="Domu.html">
+					      <img src="icons/Kronika.png" title="Kronika"  alt="Home Icon" class="iconHome" />
+                          <span>Kronika</span>
+                    </a>
+                </li>
+            
+			    <li class="neactive">
+                    <a id="iconaRepertoar" href="Domu.html">
+					      <img src="icons/Repertoar.png" title="Repertoár" alt="Home Icon" class="iconHome" />
+                          <span>Repertoár</span>
+                    </a>
+                </li>
+					
+				<li class="neactive">
+                    <a id="iconaCurda" href="Domu.html">
+					      <img src="icons/Curda.png" title="Čurda" alt="Home Icon" class="iconHome" />
+                          <span>Čurda</span>
+                    </a>
+                </li>
+					
+				<li class="neactive">
+                    <a id="iconaFotogalerie" href="Domu.html">
+					      <img src="icons/Fotogalerie.png" title="Fotogalerie" alt="Home Icon" class="iconHome" />
+                          <span>Fotogalerie</span>
+                    </a>
+                </li>
+				
+				<li class="neactive">
+                    <a id="iconaVideogalerie" href="Domu.html">
+					      <img src="icons/Videogalerie.png" title="Videogalerie" alt="Home Icon" class="iconHome" />
+                          <span>Videogalerie</span>
+                    </a>
+                </li>
+    
+				<li class="neactive">
+                    <a id="iconaFacebook" href="Domu.html">
+					      <img src="icons/Facebook.png" title="Facebook" alt="Home Icon" class="iconHome" />
+                          <span>Facebook</span>
+                    </a>
+                </li>
+				
+				<li class="neactive">
+                    <a id="iconaGames" href="Domu.html">
+					      <img src="icons/Games.png" title="Hry" alt="Home Icon" class="iconHome" />
+                          <span>Games</span>
+                    </a>
+                </li>
+
+				<li class="neactive">
+                    <a id="iconaSponzori" href="Domu.html">
+					      <img src="icons/Sponzori.png" title="Sponzoři" alt="Home Icon" class="iconHome" />
+                          <span>Sponzoři</span>
+                    </a>
+                </li>
+					
+				<li class="neactive">
+                    <a id="iconaSanony" href="Domu.html">
+					      <img src="icons/Sanony.png" title="Úřední šiml" alt="Home Icon" class="iconHome" />
+                          <span>Šanony</span>
+                    </a>
+                </li>
+					
+				<li class="neactive">
+                    <a id="iconaKontakt" href="Domu.html">
+					      <img src="icons/Kontakt.png" title="Kontakt" alt="Home Icon" class="iconHome" />
+                          <span>Kontakt</span>
+                    </a>
+                </li>
+
+        </ul>
+		</div>
+		
+		  <a class="menu-iconZivyKraj" data-type="Custom" title="Živý kraj" href="https://zivykraj.cz/"><span><img src="images/ivkraj.png" alt="" width="25" height="25" ></span>
+          </a>
+		
+          <a class="menu-iconKarlovarskyKraj" data-type="Custom" title="Karlovarský kraj" href="https://www.kr-karlovarsky.cz/"><span><img src="images/Karlovarskkraj.png" alt="" width="25" height="25" ></span>
+          </a>
+		
+		  <a class="menu-iconHamburger" data-type="Custom" title="Menu" onclick="toggleMenu()"><span>&#9776; <!-- Unicode znak pro hamburger menu --></span> 
+           </a>
+    </div><!-- konec horní lišty -->
+	
+	<!-- Hamburger Menu, které se zobrazí při kliknutí -->
+    <div id="menu" class="d-none">
+        <ul>
+			    <li class="active">
+                    <a id="iconaDomuHamburger" href="Domu.html">
+					      <img src="icons/Home.png" alt="Home Icon" class="iconHome" />
+                          Domů
+                    </a>
+                </li>
+			
+			    <li class="active">
+                    <a id="iconaKronikaHamburger" href="Domu.html">
+					      <img src="icons/Kronika.png" alt="Home Icon" class="iconHome" />
+                          Kronika
+                    </a>
+                </li>
+			
+			    <li class="active">
+                    <a id="iconaRepertoarHamburger" href="Domu.html">
+					      <img src="icons/Repertoar.png" alt="Home Icon" class="iconHome" />
+                          Repertoár
+                    </a>
+                </li>
+			
+			    <li class="active">
+                    <a id="iconaCurdaHamburger" href="Domu.html">
+					      <img src="icons/curda.png" alt="Home Icon" class="iconHome" />
+                          Čurda
+                    </a>
+                </li>
+			
+			    <li class="active">
+                    <a id="iconaFotogalerieHamburger" href="Domu.html">
+					      <img src="icons/fotogalerie.png" alt="Home Icon" class="iconHome" />
+                          Fotogalerie
+                    </a>
+                </li>
+			
+			    <li class="active">
+                    <a id="iconaVideogalerieHamburger" href="Domu.html">
+					      <img src="icons/Videogalerie.png" alt="Home Icon" class="iconHome" />
+                          Videogalerie
+                    </a>
+                </li>
+			
+			    <li class="active">
+                    <a id="iconaFacebookHamburger" href="Domu.html">
+					      <img src="icons/Facebook.png" alt="Home Icon" class="iconHome" />
+                          Facebook
+                    </a>
+                </li>
+			
+			    <li class="active">
+                    <a id="iconaGamesHamburger" href="Domu.html">
+					      <img src="icons/Games.png" alt="Home Icon" class="iconHome" />
+                          Hry
+                    </a>
+                </li>
+			
+			    <li class="active">
+                    <a id="iconaSponzoriHamburger" href="Domu.html">
+					      <img src="icons/Sponzori.png" alt="Home Icon" class="iconHome" />
+                          Sponzoři
+                    </a>
+                </li>
+			
+			    <li class="active">
+                    <a id="iconaSanonyHamburger" href="Domu.html">
+					      <img src="icons/Sanony.png" alt="Home Icon" class="iconHome" />
+                          Úřední šiml
+                    </a>
+                </li>
+			
+			    <li class="active">
+                    <a id="iconaKontaktHamburger" href="Domu.html">
+					      <img src="icons/Kontakt.png" alt="Home Icon" class="iconHome" />
+                          Kontakt
+                    </a>
+                </li>
+        </ul>
+    </div>
+	
+</nav>
+<!-- Boční lišta -->
+<!-- ////////////////////////////////////-->
+
+<!--Vzhled-->
+	<div class="GlassOrbs">
+        <img src="images/GlassOrbs.png" alt="Responsive Image" width="250" class="GlassOrbs-image" margin="0px">
+    </div>
+	
+	<div class="Uvitani">
+        	<h1>Vítejte na stránkách</h1>
+		    <h1>DIVADLA BEZ ZÁKULISÍ</h1>
+    </div>
+
+<!--Podpis autora-->
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //                                                PODPIS AUTORA                                             // -->
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<div class="Podpis"><h6>Ladislav KÜHNL, 2024</h6>    </div>
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //                                                   FOOTER                                                 // -->
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h2>O Divadle</h2>
+                <p>Divadlo nabízí širokou škálu představení pro všechny věkové skupiny. Naše mise je přinášet kulturní zážitky a vzdělání VŠEM!</p>
+            </div>
+        </div>
+			
+        <div class="footer-bottom">&copy; 2024 Divadlo bez zákulisí | Všechna práva vyhrazena</div>
+</footer>
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //                                             SCRIPTY JS (načítání)                                        // -->
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <script src="JS/jquery-1.12.0.min.js" async></script>
+	    <script src="JS/BocniPanel.js" async></script> 	 
+        <script src="JS/Ovládání.js" async></script> 
+	    <script src="js/mobile-menu.js"></script>
+        <script src="Other/01 Domu/BL.js" async></script>  	 
+        <script src="Other/01 Domu/CreateCanvasBL.js" async></script>
+	    <script src="Bootstrap-5.0.2/js/bootstrap.js" async></script>
+	
+	    <!--Funkce pro změnu obsahu na základě velikosti obrazovky-->
+	    <!--CSS neumí měnit text, proto to řeším pomocí Javascriptu-->
+	    <script>
+
+             function updateContentBasedOnWidth() {
+                 const element = document.querySelector('.NapisDivadlo');
+                 const mediaQuery = window.matchMedia('(max-width: 479px)');
+      
+				 //Pokud je šířka obrazovky menší nebo rovna 479px
+                 if (mediaQuery.matches) {
+                    element.textContent = 'DBZ';
+                    } else {
+                 //Pokud je šířka obrazovky větší než 479px
+                    element.textContent = 'Divadlo bez zákulisí';
+                 }
+             }
+
+            //Zavolat funkci při načtení stránky
+            updateContentBasedOnWidth();
+
+            //Přidaz posluchač události pro změnu velikosti okna
+            window.addEventListener('resize', updateContentBasedOnWidth);
+       </script>
+	
+
+
+
+	</body>
+</html>

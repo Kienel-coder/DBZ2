@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //                                                   HEAD                                                   // -->
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<head>
+    <title>Divadlo bez zákulisí</title>
+    <link rel="icon" type="image/x-icon" href="Icons/favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!--Tři následující řádky zajišťují nenačítání Cache dat-->
+    <META HTTP-EQUIV="Expires" CONTENT="0">
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+
+    <meta name="keywords" content="Divadlo bez zákulisí, Sokolovská čurda, Hrajeme o život">
+    <meta name="description" content="Divadlo bez zákulisí, divadlo pro Vás">
+    <meta name="author" content="Ladislav KÜHNL">
+
+    <!--Kompatabilita-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=11">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+    <meta http-equiv="X-UA-Compatible" content="IE=10">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <meta http-equiv="X-UA-Compatible" content="IE=5">
+
+    <!-- Boční lišta CSS-->
+    <link rel="stylesheet" href="css/Icons.css">
+
+    <!-- Vlastní CSS-->
+    <link rel="stylesheet" href="css/Kienel.css">
+
+    <!-- Script nutný pro AdobeAnimate-->
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+</head>
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //                                                 BODY                                                     // -->
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<body>
+
+
+    <!-- Horní lišta -->
+    <!-- ////////////////////////////////////-->
+    <nav id="HorniListaBilyPodklad">
+        <div class="HorniLista">
+            <img src="images/Divadlo.jpg" alt="Divadlo bez zákulisí" width="60">  Divadlo bez zákulisí</a>
+        </div>
+    </nav>
+
+    <!-- Boční lišta -->
+    <!-- ////////////////////////////////////-->
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header" style="height:60px;"></div>
+
+            <ul class="list-unstyled components">
+
+                <li class="active">
+                    <a id="Domů" ; href="Domu.html">
+                        <i class="glyphicon glyphicon-home"></i>
+                        Domů
+                    </a>
+                </li>
+
+                <li>
+                    <a id="Kronika" ; href="Index.html">
+                        <i class="glyphicon glyphicon-book"></i>
+                        Kronika
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" data-toggle="collapse" aria-expanded="false">
+                        <i class="glyphicon glyphicon-pencil"></i>
+                        Repertoár
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Listy.html">
+                        <i class="glyphicon glyphicon-star"></i>
+                        Čurda
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Other/Textbox/Textbox.html">
+                        <i class="glyphicon glyphicon-file"></i>
+                        Fotogalerie
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="glyphicon glyphicon-film"></i>
+                        Videogalerie
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.facebook.com/">
+                        <i class="glyphicon glyphicon-road"></i>
+                        Facebook
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#CompanySubmenu222" data-toggle="collapse" aria-expanded="false">
+                        <i class="glyphicon glyphicon-briefcase"></i>
+                        Hry
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="glyphicon glyphicon-euro"></i>
+                        Sponzoři
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="glyphicon glyphicon-cloud"></i>
+                        Úřední šiml
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="glyphicon glyphicon-envelope"></i>
+                        Kontakt
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+    <!--Vzhled-->
+    <!--Podpis autora-->
+    <!-- ////////////////////////////////////-->
+    <div id="Podpis"><h6>Ladislav KÜHNL, 2022</h6></div>
+    <div><h6 id="sss">Ladislav KÜHNL Šabina 2022</h6></div>
+    <canvas id=sss2></canvas>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- //                                             SCRIPTY JS (načítání)                                        // -->
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <script src="JS/jquery-1.12.0.min.js" async></script>
+    <script src="JS/BocniPanel.js" async></script>
+    <script src="JS/Ovládání.js" async></script>
+
+
+
+    <script src="JS/Listy.js" async></script>
+    <script src="CreateCanvasAnimateListy.js" async></script>
+    <!-- <script src="CreateCanvasAnimateBocniLista.js" async></script>-->
+    <!-- <script src="BocniLista.js" async></script>-->
+
+</body>
+</html>

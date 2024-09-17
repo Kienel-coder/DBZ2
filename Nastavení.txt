@@ -1,0 +1,4 @@
+Maximální rozměry Canvasu jsou W:1840px
+                               H:838px
+
+V HTML5 je lepší uvádět přesné rozměry i do CSS, kvůli načítání
