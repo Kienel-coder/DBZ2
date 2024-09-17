@@ -1,0 +1,280 @@
+@charset "utf-8";
+/* 
+- V animate vytvoříme komponentu CCS
+- Necháme ji na ploše (nebo mimo rozsah, aby nebyla vidět)
+- Odkazuje se na ně jenom prostřednictvím jejich ID
+- "select option" je odkaz na html (v javascriptu jsem je vytvořil:
+
+         var select = document.getElementById("comb");
+	 var option = document.createElement('option');
+         option.text = "Ano"      //text i value jsou stringy
+	 option.value = "11";
+         select.add(option, 3);  //trojka je pozice v seznamu
+*/
+
+
+/* ---------------------------------------------------
+    Background a základní vzhled menu
+----------------------------------------------------- */
+html, body 
+{
+  width:  100%;
+  height: 100%;
+  margin: 0;
+  background:url(../images/Background.png); 
+	
+	background-color: rgba(255, 255, 255, 0.3);
+	background-blend-mode: lighten;
+	    /*background:
+    radial-gradient(ellipse at 20% 20%, #35234b 0%, transparent 70%),
+    radial-gradient(ellipse at 60% 20%, #2975bf 0%, transparent 70%),
+    radial-gradient(ellipse at 100% 20%, #3d54b1 0%, transparent 70%),
+    /*radial-gradient(ellipse at 100% 100%, #0d0d0d 0%, transparent 70%),
+    radial-gradient(ellipse at 20% 100%, #362d6f 0%, transparent 70%);*/
+  background-size: cover; /* Zajistí, že obrázek vyplní celou plochu */
+  background-repeat: no-repeat; /* Zajistí opakování obrázku, pokud je menší než okno */
+  background-position: center center; /* Umožňuje obrázku být centrován */
+  background-attachment: fixed;/* Barva pozadí, pokud obrázek nezaplní celé pozadí */
+	
+	            display: flex;/* Footer se bude zobrazovat dole */
+            flex-direction: column;
+            min-height: 100vh; /* Nastaví minimální výšku na výšku viewportu */
+}
+
+#HorniListaBilyPodklad 
+{
+	position: fixed;
+	width: 100%;
+	height:80px;
+	padding: 5px 5px 0px 5px;
+    background: white;
+    color:white;
+	align-items: center; /* Vertikální zarovnání na střed */
+	z-index: 1000; /* Zajistí, že menu bude nad ostatním obsahem */  
+}
+
+.HorniLista
+{
+  background: darkred;
+  background:url(../images/Opona.png); 
+  padding: 5px 25px 5px 5px;
+  font-family: "Times New Roman", Times, serif;
+  font-family: cursive;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center; /* Vertikální zarovnání na střed */
+  gap: 20px; /* Vzdálenost mezi jednotlivými ikonami */
+}
+
+.NapisDivadlo{
+	/*padding: 5px 5px 5px 10px;*/
+}
+
+/* ---------------------------------------------------
+    Tmavý ovál s ikonami
+----------------------------------------------------- */
+.darkTheme
+{
+  background: #222;
+	position: relative;
+opacity: .6;
+  padding: 0px 25px 10px 5px;
+  font-family: "Times New Roman", Times, serif;
+  font-family: cursive;
+  font-size: 0.8em;
+  align-items: center; /* Vertikální zarovnání na střed */
+  gap: 20px; /* Vzdálenost mezi jednotlivými ikonami */
+	border-radius: 10px; /* Zaoblení rohů kontejneru */
+	height: 60px;	 
+}
+
+.darkTheme ul {
+  list-style: none; /* Odstranit defaultní stylování seznamu */
+  margin: 0;
+  padding: 5px 0px 0px 5px;
+  display: flex; /* Umožňuje zobrazit položky vedle sebe */
+  gap: 20px
+}
+
+.darkTheme .active .iconHome {
+  width: 50px;
+  height: 50px;
+}
+
+.darkTheme .active a span {
+    display: none; /* Skrytí textového elementu (pokud je použit <span>) */
+}
+
+.darkTheme a {
+  color: white; /* Barva textu odkazu */
+  text-decoration: none; /* Odstranění podtržení odkazu */
+  display: flex; /* Použití flexboxu pro vertikální zarovnání */
+  flex-direction: column; /* Vertikální zarovnání obsahu */
+  align-items: center; /* Horizontální zarovnání obsahu na střed */
+}
+
+.darkTheme i {
+  margin-bottom: 5px; /* Vzdálenost mezi ikonou a textem */
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE zatím nic
+----------------------------------------------------- */
+
+/* ---------------------------------------------------
+    Adobe animate CANVAS
+----------------------------------------------------- */
+#PlochaCanvas 
+{
+    position: fixed;
+    width: 1310px;
+	height: 450px;
+    max-width: 1310px;
+    left: 90px;
+    top: 95px;
+}
+
+#anim_container 
+{
+    position: relative;
+    width: 100%;
+	height: 838px;
+    max-width: 1840px;
+	background-color:transparent;
+}
+
+#dom_overlay_container 
+{
+    position: absolute;
+    width: 100%;
+	max-width: 1840px;
+    height: 838px;
+    display: block;
+
+
+}
+
+#canvas 
+{
+    position: absolute;
+    width: 100%;
+	max-width: 1840px;
+    height: 838px;
+    display: block;
+    border: 0px solid transparent;
+    background-color:transparent;
+}
+/* ---------------------------------------------------
+    Podpis autora
+----------------------------------------------------- */
+.Podpis 
+{
+    position: fixed;
+    width: 180px;
+    bottom: 100px;
+    right: 100px;
+	color:gray;
+	opacity: 0.4;
+padding: 0px;
+	
+}
+
+/* ---------------------------------------------------
+    FOOTER - spodní lišta
+----------------------------------------------------- */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 0px;
+	margin-top: auto;
+	width: 100%;  /* Zajistí, že footer bude přes celou šířku stránky */
+}
+
+.footer-content {
+    padding: 0px;
+    background: #333;
+    color: white;
+    font-size: 0.9em;
+    text-align: center;
+    height: 95px;
+    /*overflow: auto; Zobrazí posuvník, pokud text přesahuje maximální výšku */
+    padding: 5px; /* Padding uvnitř kontejneru */
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 0px;
+}
+
+.footer-section h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.footer-section p {
+    font-size: 0.8em;
+    line-height: 1.16;
+    padding: 0px 0px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 5px 0px;
+    background: #222;
+    font-size: 0.9em;
+	    position: fixed; /* Upevněná pozice */
+    bottom: 0; /* Umístění na spodní část obrazovky */
+    left: 0; /* Upevnění na levý okraj obrazovky */
+    width: 100%; /* Šířka přes celou obrazovku */
+	height: 30px;
+   /* z-index: 1000; /* Zajistí, že bude nad ostatním obsahem */
+}
+
+/* ---------------------------------------------------
+    Blbostičky - zatím nevyužité
+----------------------------------------------------- */
+#ahoj {
+    color: red; /* Barva textu */
+    font-weight: bold; /* Tučný text */
+    text-decoration: none; /* Odstranění podtržení odkazu */
+    content: "Váš nový text"; /* Nový text, který chcete nastavit do odkazu */
+}
+
+#ahoj:hover {
+    color: green; /* Barva textu při najetí myší */
+}
+
+/*Při výběru textu tažením myši, bude pozadí žluté a písmena červená*/
+::selection 
+{
+  color: red;
+  background: yellow;
+}
+
+/*týká se prostoru pro výběr*/
+select option 
+{
+  background-color: beige;
+  color: red; 
+} 
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.0s;
+}
+/* ---------------------------------------------------
+    vzor
+----------------------------------------------------- */
+
+/* ---------------------------------------------------
+    vzor
+----------------------------------------------------- */
+
+/* ---------------------------------------------------
+    vzor
+----------------------------------------------------- */
+
+/* ---------------------------------------------------
+    vzor
+----------------------------------------------------- */

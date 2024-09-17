@@ -1,0 +1,21 @@
+/*Ikony jsem stahoval ze stránek:  https://icons8.com/icons  */
+
+.iconHome{
+	width: 25px;
+	height: 25px;
+}
+
+        .GlassOrbs {
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Vertikální centrování */
+            height: auto; /* Můžeš použít konkrétní výšku, pokud je to potřeba */
+
+        }
+        .GlassOrbs-image {
+            max-width: 100%;
+            height: auto;
+            display: block; /* Odstraňuje mezery pod obrázkem */
+                        margin: 150px 0px 50px 0px; /* Zajistí, že obrázek nemá žádný margin */
+        }
